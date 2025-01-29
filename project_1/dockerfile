@@ -1,0 +1,7 @@
+FROM python:3.9
+
+RUN pandas
+
+WORKDIR  /apps
+COPY pipeline.py pipeline.py
+ENTRYPOINT [ "bash" ]
